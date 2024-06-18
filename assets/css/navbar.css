@@ -1,0 +1,24 @@
+.toggle-btn {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.toggle-btn span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.toggle-btn .img-logo {
+    width: 25px;
+    margin-left: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 0.5px solid #fff;
+}

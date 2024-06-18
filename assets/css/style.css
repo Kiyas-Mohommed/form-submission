@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --trBackground-color: #d3d3d3;
+    --registerBtn-color: #ff0;
+    --background-color: #eee;
+    --input-background: #fff;
+    --errMsg-color: #f00;
+    --input-color: #789;
+    --text-color: #000;
+}
+
+.dark-mode {
+    --background-color: #00002e;
+    --trBackground-color: #789;
+    --input-background: #eee;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color) !important;
+    transition: background 0.9s, color 0.9s ease;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+i {
+    margin-left: 5px;
+    color: var(--input-color);
+}
+
+label {
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: var(--input-color);
+    border-radius: 12px;
+    background-color: var(--input-background);
+    padding: 10px 10px 10px 12px;
+    margin-top: 5px !important;
+    font-size: 14px !important;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.errMsg {
+    color: var(--errMsg-color);
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.title-txt {
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.registerBtn {
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+    margin-top: 20px;
+    padding: 15px 50px;
+    border-radius: 12px;
+    background-color: var(--input-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.registerBtn:hover {
+    color: var(--registerBtn-color);
+}
+
+.logoutBtn {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 20px;
+    color: var(--errMsg-color);
+    background-color: #eee;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: var(--input-background);
+    flex: 1;
+    padding: 10px 10px 10px 12px;
+    color: var(--input-color);
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 19em;
+    height: 3em;
+    overflow: hidden;
+    border-radius: .30em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: var(--input-color);
+    color: var(--input-background);
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: var(--registerBtn-color);
+}
+
+.tbHeader {
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    padding: 0px 10px 14px;
+    color: var(--text-color);
+    border-bottom: 2px double var(--text-color);
+}
+
+.tbData {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 14px;
+    transition: 0.5s ease;
+    color: var(--text-color);
+    border-bottom: 0.5px solid var(--input-color);
+}
+
+.editBtn {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 3px 5px;
+    font-weight: 600;
+    color: #006400;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.deleteBtn {
+    color: #f00;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px 5px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.trHover:hover {
+    background-color: var(--trBackground-color);
+}
